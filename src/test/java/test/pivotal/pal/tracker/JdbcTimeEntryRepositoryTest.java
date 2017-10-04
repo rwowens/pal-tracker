@@ -25,6 +25,7 @@ public class JdbcTimeEntryRepositoryTest {
     public void setUp() throws Exception {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
+//        dataSource.setURL("jdbc:mysql://localhost:3306/tracker_test?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false");
 
         subject = new JdbcTimeEntryRepository(dataSource);
 

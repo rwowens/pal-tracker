@@ -4,3 +4,5 @@ applications:
   path: build/libs/pal-tracker.jar
   random-route: false
   host: rwo-pal-tracker-review
+  services:
+    - tracker-database
