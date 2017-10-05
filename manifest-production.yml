@@ -4,3 +4,5 @@ applications:
   path: build/libs/pal-tracker.jar
   random-route: false
   host: rwo-pal-tracker
+  env:
+    SECURITY_FORCE_HTTPS: true
