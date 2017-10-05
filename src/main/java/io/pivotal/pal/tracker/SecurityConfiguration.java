@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        if ("true".equals(System.getenv("SECURITY_FORCE_HTTPS "))) {
+        if ("true".equals(System.getenv("SECURITY_FORCE_HTTPS"))) {
             http.requiresChannel().anyRequest().requiresSecure();
         }
         http
